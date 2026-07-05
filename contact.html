@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | KIN India</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo" aria-label="KIN India Home"><img src="logo.png" alt="KIN India logo"></a>
+            <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About Us</a>
+                <a href="programs.html" class="nav-item">Our Programs</a>
+                <a href="news.html" class="nav-item">News & Articles</a>
+                <a href="gallery.html" class="nav-item">Gallery</a>
+                <a href="donate.html" class="btn btn-primary nav-cta">Donate Us</a>
+                <a href="contact.html" class="nav-item active">Contact</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="menuToggle" aria-label="Toggle menu"><span class="bar"></span><span class="bar"></span><span class="bar"></span></button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container page-hero-content reveal">
+                <span class="sub-title">Contact</span>
+                <h1>Reach KIN India for support, partnership, or volunteering.</h1>
+                <p>Use the form below for general queries, partnerships, volunteering, media requests, or concern reporting.</p>
+            </div>
+        </section>
+
+        <section class="contact-section compact-contact">
+            <div class="container contact-container-premium">
+                <div class="contact-info-panel reveal">
+                    <h2>Get in Touch</h2>
+                    <p>Reach out securely to explore collaborations, flag systemic queries, or join active protection work.</p>
+                    <div class="info-blocks-stack">
+                        <div class="info-block-node"><label>Secure Email</label><span>contact@kinindia.org</span></div>
+                        <div class="info-block-node"><label>Direct Liaison</label><span>+91 XXXXX XXXXX</span></div>
+                        <div class="info-block-node"><label>Headquarters</label><span>New Delhi, India</span></div>
+                    </div>
+                    <div class="whatsapp-container-box">
+                        <a href="#" class="whatsapp-btn-modern" id="whatsappLink" target="_blank" rel="noopener noreferrer">
+                            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.713-1.457L0 24zm6.59-3.513c1.6.95 3.398 1.451 5.353 1.452 5.484 0 9.947-4.46 9.951-9.94.002-2.656-1.033-5.153-2.909-7.03C17.166 3.093 14.67 2.058 12.01 2.057c-5.49 0-9.957 4.463-9.96 9.943-.001 1.86.485 3.68 1.41 5.29l-.995 3.636 3.73-.978zm11.235-7.511c-.3-.15-1.772-.875-2.046-.975-.273-.1-.473-.15-.673.15-.2.3-.773.975-.95 1.174-.177.2-.353.224-.653.075-.3-.15-1.265-.467-2.41-1.485-.89-.793-1.49-1.773-1.665-2.073-.177-.3-.019-.462.13-.611.135-.134.3-.349.45-.523.15-.174.2-.299.3-.499.1-.2.05-.375-.025-.524-.075-.15-.673-1.62-.922-2.22-.242-.58-.488-.5-.673-.51-.173-.008-.373-.01-.573-.01-.2 0-.525.075-.8.375-.274.3-1.048 1.023-1.048 2.492 0 1.47 1.074 2.89 1.223 3.09.149.2 2.115 3.23 5.123 4.532.715.31 1.273.496 1.71.635.717.227 1.369.195 1.885.118.575-.085 1.771-.724 2.022-1.424.252-.699.252-1.296.177-1.423-.075-.125-.275-.2-.575-.35z"/></svg>
+                            Send Message
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form-panel-wrapper reveal">
+                    <form id="contactForm" class="contact-form-modern" novalidate>
+                        <div class="form-row-split">
+                            <div class="form-group-modern"><label for="name">Full Name</label><input type="text" id="name" name="name" required placeholder="Your name"><span class="error-msg" id="nameError">Required</span></div>
+                            <div class="form-group-modern"><label for="email">Email Address</label><input type="email" id="email" name="email" required placeholder="name@domain.com"><span class="error-msg" id="emailError">Invalid email</span></div>
+                        </div>
+                        <div class="form-row-split">
+                            <div class="form-group-modern"><label for="phone">Phone Number</label><input type="tel" id="phone" name="phone" required placeholder="+91 XXXXX XXXXX"><span class="error-msg" id="phoneError">Required</span></div>
+                            <div class="form-group-modern"><label for="reason">Reason for Contact</label><select id="reason" name="reason" required><option value="" disabled selected>Select alternative</option><option value="General Inquiry">General Inquiry</option><option value="Partnership">Partnership</option><option value="Volunteer">Volunteer</option><option value="Report Concern">Report Concern</option><option value="Media">Media</option></select><span class="error-msg" id="reasonError">Select one</span></div>
+                        </div>
+                        <div class="form-group-modern"><label for="message">Detailed Note</label><textarea id="message" name="message" rows="4" required placeholder="Type context here..."></textarea><span class="error-msg" id="messageError">Message context empty</span></div>
+                        <button type="submit" class="btn btn-primary premium-submit-btn">Send Message</button>
+                        <div id="formStatus" class="form-status-msg"></div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand"><h3>KIN <span>India</span></h3><p>Stop Human Trafficking. Protect dignity. Restore hope.</p></div>
+            <div class="footer-links"><h4>Pages</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="programs.html">Our Programs</a></li><li><a href="gallery.html">Gallery</a></li></ul></div>
+            <div class="footer-socials"><h4>Connect</h4><div class="social-icons"><a href="https://www.linkedin.com/in/kin-india-a700ba368?utm_source=share_via&utm_content=profile&utm_medium=member_android" class="social-link linkedin-button" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2026 KIN India. All Rights Reserved.</p></div>
+    </footer>
+    <script src="site-data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
